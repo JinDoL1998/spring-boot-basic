@@ -7,6 +7,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity(name="Example")
 @Table(name="Example")
 public class ExampleEntity {
@@ -14,6 +23,6 @@ public class ExampleEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="example_column1", nullable = false, unique = true)
     private int pk;
-    private String exmapleColumn2;
+    private String exampleColumn2;
     private boolean exampleColumn3;
 }
