@@ -1,0 +1,35 @@
+Spring Web
+Validation
+Spring Data JPA
+MySQL Driver
+Lombok
+
+application.properties 변경
+
+server.port=4040
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/sjh_board?serverTimezone=UTC&characterEncoding=UTF-8
+spring.datasource.username=root
+spring.datasource.password=root
+
+폴더 구조
+- controller
+- config
+- service
+  - implement
+- repository
+- dto
+  - request
+  - response
+- entity
+
+
+
+
+
+
+
+
+
+
+
